@@ -11,7 +11,8 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -23,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://mysterious-ravine-09798.herokuapp.com//parse"
             })
         )
+        
         
         return true
     }

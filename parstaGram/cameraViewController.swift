@@ -53,8 +53,10 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                picker.allowsEditing = true
                
                if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                   print("Camera is available 📸")
                    picker.sourceType = .camera
                } else {
+                   
                    picker.sourceType = .photoLibrary
                }
                
